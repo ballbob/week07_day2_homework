@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.codeclan.wordcountr.WordCountrActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/text_to_be_counted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to be counted."
+        android:textSize="50dp"/>
+
+    <Button
+        android:layout_below="@id/text_to_be_counted"
+        android:id="@+id/countButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="30dp"
+        android:text="count"
+        android:layout_gravity="center"
+        android:onClick="onCountButtonClicked"
+        />
+
+</RelativeLayout>
