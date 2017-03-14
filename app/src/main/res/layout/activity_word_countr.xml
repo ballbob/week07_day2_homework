@@ -7,15 +7,15 @@
     tools:context="com.codeclan.wordcountr.WordCountrActivity">
 
     <EditText
-        android:id="@+id/text_to_be_counted"
+        android:id="@+id/entered_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter text to be counted."
         android:textSize="50dp"/>
 
     <Button
-        android:layout_below="@id/text_to_be_counted"
-        android:id="@+id/countButton"
+        android:layout_below="@id/entered_text"
+        android:id="@+id/count_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"

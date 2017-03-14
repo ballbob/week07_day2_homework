@@ -10,7 +10,7 @@ public class WordCount {
     public WordCount(){
     }
 
-    public int wordCount(String words){
+    public Integer wordCount(String words){
         String[] wordArray = words.trim().split("\\s+");
         int result = wordArray.length;
         return result;
